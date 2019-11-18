@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/6ea3086b9e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Сайт на Bootstrap 4 + BEM</title>
 </head>
 <body>
@@ -20,12 +20,12 @@
                 <div class="col-xl-8 ml-auto align-self-center">
                     <nav>
                         <ul class="menu d-flex justify-content-end">
-                            <li class="menu__item"><a class="text-dark" href="#">Home</a></li>
-                            <li class="menu__item"><a class="text-dark" href="#">About</a></li>
-                            <li class="menu__item"><a class="text-dark" href="#">Servicing</a></li>
-                            <li class="menu__item"><a class="text-dark" href="#">Portfolio</a></li>
-                            <li class="menu__item"><a class="text-dark" href="#">Blog</a></li>
-                            <li class="menu__item"><a class="text-dark" href="#">Contact</a></li>
+                            <li class="menu__item"><a href="#">Home</a></li>
+                            <li class="menu__item"><a href="#">About</a></li>
+                            <li class="menu__item"><a href="#">Servicing</a></li>
+                            <li class="menu__item"><a href="#">Portfolio</a></li>
+                            <li class="menu__item"><a href="#">Blog</a></li>
+                            <li class="menu__item"><a href="#">Contact</a></li>
                             <li class="menu__item"><i class="fas fa-search"></i></li>
                         </ul>    
                     </nav>
@@ -33,6 +33,48 @@
             </div>
         </div>
     </header>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h1 class="header__title">Web development project</h1>
+                    <p class="header__text">Very suitable to support all web development projects</p>
+                    <button class="button button_empty">Our services</button>
+                    <button class="button button_full">Hire is now</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about">
+       <div class="container">
+           <div class="row justify-content-center">
+               <div class="col-xl-8">
+                   <h2 class="about__title">About us</h2>
+                   <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+               </div>
+           </div>
+           <div class="row justify-content-around">
+               <div class="col-xl-3">
+                   <img src="img/internet.png" alt="">
+                   <h3 class="about_h3">Awesome Icons</h3>
+                   <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis assumenda voluptatum beatae, obcaecati dignissimos corrupti.</p>
+               </div>
+               <div class="col-xl-3">
+                   <img src="img/transfer.png" alt="">
+                   <h3 class="about_h3">One Page</h3>
+                   <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis assumenda voluptatum beatae, obcaecati dignissimos corrupti.</p>
+               </div>
+               <div class="col-xl-3">
+                   <img src="img/transfer.png" alt="">
+                   <h3 class="about_h3">Fully Responsive</h3>
+                   <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis assumenda voluptatum beatae, obcaecati dignissimos corrupti.</p>
+               </div>
+           </div>
+       </div>
+    </section>
 
 
 
