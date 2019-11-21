@@ -159,8 +159,9 @@ li {
     padding-top: 120px;
     padding-bottom: 125px;
 }
-
-.portfolio button:hover{
+/*.portfolio .button[val="on"] & 4 lines whit  add class 'focused' in main.js*/
+.portfolio button:hover,
+.focused {
     color: #000;
     background: transparent;
     border:  2px solid #00897b;
@@ -173,5 +174,109 @@ li {
 .filter{
     padding: 120px 0;
   
+}
+div[filter]:hover img{
+filter: brightness(50%);
+transition: 0.3s;
+}
+
+.text{
+    display: none;
+}
+
+div[filter]:hover .text{
+display: block;
+width: 100%;
+color: #fff;
+position: absolute;
+top: 40%;
+left: 0;
+z-index: 3;
+text-align: center;
+
+}
+
+.pricing{
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: #000;
+    background: #f0f1f1;
+    text-align: center;
+   
+}
+
+.price:hover{
+    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39);
+}
+
+.price{
+background: #fff;
+transition: 0.5s;
+
+
+}
+
+.price__head{
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 65px;
+background-image: url(../img/pricing_bg.png);
+background-size: cover;
+background-repeat: no-repeat;
+max-height: 211px;
+}
+
+.price__head p{
+    font-size: 25px;
+}
+
+.price__head{
+    font-size: 50px;
+}
+
+.price__head sub{
+    vertical-align: middle;
+    font-size: 17px;
+}
+
+.price__head sup{
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.price__body{
+ font-size: 17px;
+ color: #212121; 
+  
+}
+.price__body ul li{
+    padding-top: 28px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #bfbfbf;
+    max-width: 175px;
+    margin: 0 auto;
+}
+
+.price__footer{
+  padding: 60px 0;  
+}
+
+.price__footer button{
+    cursor: pointer;
+    color: #212121;
+    background: transparent;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: 2px solid #212121;
+    transition: 0.3s;
+}
+
+.price__footer button:hover{
+    text-transform: uppercase;
+    color: #fff;
+    background: #00897b;
+    border: none;
+
+
 }
 
