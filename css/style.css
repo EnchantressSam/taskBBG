@@ -1,356 +1,401 @@
-@import 'fonts.css';
+@import "fonts.css";
 
 body {
-    font-family: 'Open Sans';
-  
+  font-family: "Open Sans";
 }
-
 
 ul,
 li {
-    display: block;
-    padding: 0;
-    margin: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
 .menu-bar {
-    background: #fff;
-    color: #212121;
-    padding: 20px 0;
+  background: #fff;
+  color: #212121;
+  padding: 20px 0;
 }
 
 .menu__item {
-    margin-left: 37px;
+  margin-left: 37px;
 }
 
 .menu__item a {
-    font-family: 'Open Sans Semibold';
-    font-size: 20px;
-    color: #212121;
-   
+  font-family: "Open Sans Semibold";
+  font-size: 20px;
+  color: #212121;
 }
 
 .menu__item a:hover {
-    text-decoration: none;
-    color: #868686;
+  text-decoration: none;
+  color: #868686;
 }
 
-.header{
-    padding: 180px 0;
-    text-align: center;
-    color: #fff;
-    background-image: url(../img/header.png);
-    background-size: cover;
-    background-position: 0 100%;
-
+.header {
+  padding: 180px 0;
+  text-align: center;
+  color: #fff;
+  background-image: url(../img/header.png);
+  background-size: cover;
+  background-position: 0 100%;
 }
 
 .header__title {
-    font-size: 55px;
-
+  font-size: 55px;
 }
 
 .header__text {
-    font-size: 20px;
-    margin-bottom: 180px;
+  font-size: 20px;
+  margin-bottom: 180px;
 }
 
 .button {
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 10px 25px;
-    margin: 0 10px;
-    color: white;
-    transition: 0.3s;
-    background: #00897b;
-    border: 2px solid #00897b;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px 25px;
+  margin: 0 10px;
+  color: white;
+  transition: 0.3s;
+  background: #00897b;
+  border: 2px solid #00897b;
 }
 
 .button:hover {
-    background: transparent;
-    border: 2px solid white;
+  background: transparent;
+  border: 2px solid white;
 }
 
-
-
-.about{
-    padding-top: 120px;
-    padding-bottom: 125px;
-    color: #000;
-    background: #fff;
-    text-align: center;
+.about {
+  padding-top: 120px;
+  padding-bottom: 125px;
+  color: #000;
+  background: #fff;
+  text-align: center;
 }
 
 .about__title {
-    font-size: 30px;
-    font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .about__text {
-   font-size: 15px;
-   margin-bottom: 110px;
-   color: #212121;
-   transition: 0.3s;
+  font-size: 15px;
+  margin-bottom: 110px;
+  color: #212121;
+  transition: 0.3s;
 }
 
 .about_h3 {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-family: 'Open Sans Semibold';
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Open Sans Semibold";
 }
 
-.services{
-    padding-top: 165px;
-    padding-bottom: 125px;
-    color: #000;
-    background: #e4fdf9;
-    text-align: center;
-
+.services {
+  padding-top: 165px;
+  padding-bottom: 125px;
+  color: #000;
+  background: #e4fdf9;
+  text-align: center;
 }
 
-.our_card{
-    background: #fff;
-    padding: 50px 40px 40px;
-    transition: 0.3s;
-   margin-bottom: 30px;
+.our_card {
+  background: #fff;
+  padding: 50px 40px 40px;
+  transition: 0.3s;
+  margin-bottom: 30px;
 }
 
 .our_card:hover {
   background: #00897b;
   color: #fff;
   box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
-
 }
 
-.our_card:hover .icon{
-    color: #fff;
+.our_card:hover .icon {
+  color: #fff;
 }
 
-.our_card:hover .about__text{
-    color: #fff;
+.our_card:hover .about__text {
+  color: #fff;
 }
 
-.our_card:hover .button-services{
-    border: 2px solid #fff;
-    color: #fff;
+.our_card:hover .button-services {
+  border: 2px solid #fff;
+  color: #fff;
 }
-
 
 .icon {
-    font-size: 60px;
-    color: #000;
-    transition: 0.3s;
+  font-size: 60px;
+  color: #000;
+  transition: 0.3s;
 }
 
 .button-services {
-    text-transform: uppercase;
-    border: 2px solid #000;
-    background: transparent;
-    padding: 10px 12px 10px;
-    font-family: 'Open Sans Semibold';
-    color: #000;
-    transition: 0.3s;
-    margin-top: 20px;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  background: transparent;
+  padding: 10px 12px 10px;
+  font-family: "Open Sans Semibold";
+  color: #000;
+  transition: 0.3s;
+  margin-top: 20px;
 }
 
-.portfolio{
-    text-align: center;
-    padding-top: 120px;
-    padding-bottom: 125px;
+.portfolio {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 125px;
 }
 /*.portfolio .button[val="on"] & 4 lines whit  add class 'focused' in main.js*/
 .portfolio button:hover,
 .focused {
-    color: #000;
-    background: transparent;
-    border:  2px solid #00897b;
+  color: #000;
+  background: transparent;
+  border: 2px solid #00897b;
 }
 
-.portfolio img{
-    margin-bottom: 30px;
+.portfolio img {
+  margin-bottom: 30px;
 }
 
-.filter{
-    padding: 120px 0;
-  
+.filter {
+  padding: 120px 0;
 }
-div[filter]:hover img{
-filter: brightness(50%);
-transition: 0.3s;
-}
-
-.text{
-    display: none;
+div[filter]:hover img {
+  filter: brightness(50%);
+  transition: 0.3s;
 }
 
-div[filter]:hover .text{
-display: block;
-width: 100%;
-color: #fff;
-position: absolute;
-top: 40%;
-left: 0;
-z-index: 3;
-text-align: center;
-
+.text {
+  display: none;
 }
 
-.pricing{
-    padding-top: 165px;
-    padding-bottom: 125px;
-    color: #000;
-    background: #f0f1f1;
-    text-align: center;
-   
+div[filter]:hover .text {
+  display: block;
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: 3;
+  text-align: center;
 }
 
-.price:hover{
-    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39);
+.pricing {
+  padding-top: 165px;
+  padding-bottom: 125px;
+  color: #000;
+  background: #f0f1f1;
+  text-align: center;
 }
 
-.price{
-background: #fff;
-transition: 0.5s;
-
-
+.price:hover {
+  box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39);
 }
 
-.price__head{
-    color: #fff;
-    padding-top: 40px;
-    padding-bottom: 65px;
-background-image: url(../img/pricing_bg.png);
-background-size: cover;
-background-repeat: no-repeat;
-max-height: 211px;
+.price {
+  background: #fff;
+  transition: 0.5s;
 }
 
-.price__head p{
-    font-size: 25px;
+.price__head {
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 65px;
+  background-image: url(../img/pricing_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 211px;
 }
 
-.price__head{
-    font-size: 50px;
+.price__head p {
+  font-size: 25px;
 }
 
-.price__head sub{
-    vertical-align: middle;
-    font-size: 17px;
+.price__head {
+  font-size: 50px;
 }
 
-.price__head sup{
-    vertical-align: middle;
-    font-size: 25px;
+.price__head sub {
+  vertical-align: middle;
+  font-size: 17px;
 }
 
-.price__body{
- font-size: 17px;
- color: #212121; 
-  
-}
-.price__body ul li{
-    padding-top: 28px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #bfbfbf;
-    max-width: 175px;
-    margin: 0 auto;
+.price__head sup {
+  vertical-align: middle;
+  font-size: 25px;
 }
 
-.price__footer{
-  padding: 60px 0;  
+.price__body {
+  font-size: 17px;
+  color: #212121;
+}
+.price__body ul li {
+  padding-top: 28px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #bfbfbf;
+  max-width: 175px;
+  margin: 0 auto;
 }
 
-.price__footer button{
-    cursor: pointer;
-    color: #212121;
-    background: transparent;
-   width: 180px;
-   height: 60px;
-    font-size: 20px;
-    border: 2px solid #212121;
-    transition: 0.3s;
+.price__footer {
+  padding: 60px 0;
 }
 
-.price__footer button:hover{
-    text-transform: uppercase;
-    color: #fff;
-    background: #00897b;
-    border: none;
-
-
+.price__footer button {
+  cursor: pointer;
+  color: #212121;
+  background: transparent;
+  width: 180px;
+  height: 60px;
+  font-size: 20px;
+  border: 2px solid #212121;
+  transition: 0.3s;
 }
 
-.team{
-    padding-top: 165px;
-    padding-bottom: 125px;
-    color: #000;
-    background: #fff;
-    text-align: center;
-   
+.price__footer button:hover {
+  text-transform: uppercase;
+  color: #fff;
+  background: #00897b;
+  border: none;
 }
 
-.team h4{
-    font-size: 20px;
-    font-family: 'Open Sans Semibold';
-   margin-top: 30px;
+.team {
+  padding-top: 165px;
+  padding-bottom: 125px;
+  color: #000;
+  background: #fff;
+  text-align: center;
 }
 
-.team p{
+.team h4 {
+  font-size: 20px;
+  font-family: "Open Sans Semibold";
+  margin-top: 30px;
+}
+
+.team p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons a i {
+  transition: 0.3s;
+}
+
+.icons i:nth-child(1) {
+  color: #f0f1f1;
+}
+
+.icons i:nth-child(2) {
+  color: #00897b;
+}
+
+.icons a:hover i:nth-child(1) {
+  color: #3949ab;
+}
+
+.icons a:hover i:nth-child(2) {
+  color: #fff;
+}
+
+.team img {
+  margin: 0 auto;
+  min-width: 340px;
+}
+.multiple-items {
+  margin-top: 125px;
+}
+
+.slick-dots {
+  margin-top: 115px;
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots button {
+  background: #00897b;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+}
+
+.slick-dots li[class="slick-active"] button {
+  background: #3949ab;
+}
+
+.left > div:first-child {
+  order: 1;
+}
+
+.left > div:last-child {
+  order: 2;
+}
+
+.right > div:first-child {
+  order: 2;
+}
+
+.right > div:last-child {
+  order: 1;
+}
+
+.blog{
+ text-align: left;
+ margin-top: 60px;
+ margin-left: 20px; 
+}
+
+
+.blog a{
+font-size: 25px;
+color: #00897b;
+font-family: "Open Sans Semibold";
+}
+
+.blog div{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.blog span{
+   font-size: 17px;
+   font-family: "Open Sans Semibold";
+   margin-right: 35px; 
+}
+
+.blog i{
+    margin-right: 15px;
+}
+
+.blog p{
     font-size: 15px;
-    margin-bottom: 30px;
 }
 
-.icons{
-    display: flex;
-    justify-content: center;
+.left, .right{
+    margin: 0 -40px;
 }
 
-.icons a i{
-    transition: 0.3s;
-}
-
-.icons i:nth-child(1){
-    color: #f0f1f1;
-}
-
-.icons i:nth-child(2){
-    color: #00897b;
-}
-
-.icons a:hover i:nth-child(1){
-    color: #3949ab;
-}
-
-.icons a:hover i:nth-child(2){
-    color: #fff;
-}
-
-.team img{
-    margin: 0 auto;
-    min-width: 340px;
-
-}
-.multiple-items{
+.button_blog{
+width: 220px;
+height: 70px;
+text-transform: uppercase;
+color: #fff;
+font-size: 20px;
 margin-top: 125px;
-}
-
-.slick-dots{
-    margin-top: 115px;
-    display: flex;
-    justify-content: center;
-}
-
-.slick-dots button{
-    background: #00897b;
-    border: none;
-    border-radius: 50%;
-    font-size: 0;
-    height: 15px;
-    width: 15px;
-    margin: 5px;
-}
-
-.slick-dots li[class="slick-active"] button{
-    background: #3949ab;
+border: none;
+background: #00897b;
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
 }
