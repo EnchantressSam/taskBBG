@@ -20,6 +20,7 @@
     <title>Сайт на Bootstrap 4 + BEM</title>
   </head>
   <body>
+    <div id="toTop"><i class="fas fa-chevron-up"></i></div>
     <header class="menu-bar">
       <div class="container">
         <div class="row">
@@ -29,12 +30,14 @@
           <div class="col-xl-8 ml-auto align-self-center">
             <nav>
               <ul class="menu d-flex justify-content-end">
-                <li class="menu__item"><a href="#">Home</a></li>
-                <li class="menu__item"><a href="#">About</a></li>
-                <li class="menu__item"><a href="#">Servicing</a></li>
-                <li class="menu__item"><a href="#">Portfolio</a></li>
-                <li class="menu__item"><a href="#">Blog</a></li>
-                <li class="menu__item"><a href="#">Contact</a></li>
+                <li class="menu__item"><a href="/">
+                  <i class="fas fa-home"></i>
+                </a></li>
+                <li class="menu__item"><a href="#about">About</a></li>
+                <li class="menu__item"><a href="#service">Servicing</a></li>
+                <li class="menu__item"><a href="#portfolio">Portfolio</a></li>
+                <li class="menu__item"><a href="#blog">Blog</a></li>
+                <li class="menu__item"><a href="#contact">Contact</a></li>
                 <li class="menu__item"><i class="fas fa-search"></i></li>
               </ul>
             </nav>
@@ -58,7 +61,7 @@
       </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-8">
@@ -102,7 +105,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="service">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-8">
@@ -194,7 +197,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="row"></div>
         <div class="row justify-content-center">
@@ -534,7 +537,7 @@
         </div>
       </section>
 
-      <section class="services">
+      <section class="services" id="blog">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-xl-8">
@@ -546,12 +549,12 @@
                 </p>
               </div>
             </div>
-            <div class="row left">
-              <div class="col-xl-6">
+            <div class="row left justify-content-between">
+              <div class="blog-item">
                
-                <img src="img/blog1.png" alt="">
+                <img src="img/blog1.png" alt="" class="img-fluid">
               </div>
-              <div class="col-xl-6">
+              <div class="blog-item">
                   <div class="blog">
                 <a href="#">SEO Quis Vestibulum</a>
                 <div>
@@ -566,11 +569,11 @@
             </div>
               </div>
             </div>
-            <div class="row right">
-                <div class="col-xl-6">
-                  <img src="img/blog2.png" alt="">
+            <div class="row right justify-content-between">
+                <div class="blog-item">
+                  <img src="img/blog2.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-xl-6">
+                <div class="blog-item">
                     <div class="blog">
                     <a href="#">SEO Quis Vestibulum</a>
                   <div>
@@ -585,11 +588,11 @@
               </div>
                 </div>
               </div>
-              <div class="row left">
-                  <div class="col-xl-6">
-                    <img src="img/blog3.png" alt="">
+              <div class="row left justify-content-between">
+                  <div class="blog-item">
+                    <img src="img/blog3.png" alt="" class="img-fluid">
                   </div>
-                  <div class="col-xl-6">
+                  <div class="blog-item">
                       <div class="blog">
                     <a href="#">SEO Quis Vestibulum</a>
                     <div>
@@ -612,7 +615,7 @@
               </div>
       </section>
 
-      <footer class="footer">
+      <footer class="footer" id="contact">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-xl-8">
@@ -670,6 +673,8 @@
           </div>
           </div>
       </footer>
+
+      <footer class="rules">All rights Reserved © 2019`</footer>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
