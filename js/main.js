@@ -52,7 +52,22 @@ $(document).ready(function() {
     $(this).css({ 'color': '#004bee' });
     return false;
   });
-  /*up botton*/
+ 
+  /*drop-down menu */
+  $('.menu-icon').click(function(){
+    $('nav').slideToggle(500);
+    $('ul').css({
+      'display': 'flex',
+      'flex-direction': 'column'
+    })
+    if($('.menu-icon').html()=='<i class="fas fa-bars"></i>') {
+      $(this).html('<i class="fas fa-times"></i>')
+    } else {
+      $(this).html('<i class="fas fa-bars"></i>')
+    }
+  })
+
+  /*up button*/
   $(window).scroll(function(){
     if ($(this).scrollTop() != 0)
     $('#toTop').fadeIn();

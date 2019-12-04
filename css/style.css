@@ -200,7 +200,7 @@ div[filter]:hover .text {
 .price {
   background: #fff;
   transition: 0.5s;
-  /*margin-bottom: 20px;*/
+  margin-bottom: 20px;
 }
 
 .price__head {
@@ -360,7 +360,6 @@ div[filter]:hover .text {
 .blog {
   text-align: left;
   margin-top: 60px;
-  
 }
 
 .blog a {
@@ -387,8 +386,6 @@ div[filter]:hover .text {
 .blog p {
   font-size: 15px;
 }
-
-
 
 .button_blog {
   width: 220px;
@@ -444,14 +441,16 @@ div[filter]:hover .text {
   font-size: 20px;
 }
 
-.footer input, .footer textarea{
+.footer input,
+.footer textarea {
   padding: 30px;
   width: 100%;
   border-radius: 10px;
   border: none;
 }
 
-.footer input:focus, .footer textarea:focus {
+.footer input:focus,
+.footer textarea:focus {
   outline: none;
 }
 
@@ -483,7 +482,7 @@ div[filter]:hover .text {
 }
 
 .form {
-margin-top: 70px;
+  margin-top: 70px;
 }
 
 #toTop {
@@ -499,7 +498,41 @@ margin-top: 70px;
   position: fixed;
   bottom: 10px;
   right: 10px;
-cursor: pointer;
-display: none;
-color: #000;
+  cursor: pointer;
+  display: none;
+  color: #000;
+}
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    display: none;
+  }
+
+  .logo-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block;
+    background: #00897b;
+    border: none;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .blog {
+    margin-top: 10px;
+  }
+
+  .footer input, .footer textarea {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
