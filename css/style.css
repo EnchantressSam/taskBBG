@@ -311,7 +311,7 @@ div[filter]:hover .text {
 
 .team img {
   margin: 0 auto;
-  min-width: 340px;
+  max-width: 340px;
 }
 .multiple-items {
   margin-top: 125px;
@@ -531,8 +531,97 @@ div[filter]:hover .text {
     margin-top: 10px;
   }
 
-  .footer input, .footer textarea {
+  .footer input,
+  .footer textarea {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header__title {
+    font-size: 45px;
+  }
+
+  .header__text {
+    margin-bottom: 20px;
+  }
+
+  .button {
+    margin-bottom: 10px;
+  }
+
+  .about {
+    padding: 20px;
+  }
+  .about__text {
+    margin-bottom: 20px;
+  }
+
+  .services {
+    padding: 20px;
+  }
+
+  .portfolio {
+    padding: 20px;
+  }
+  .filter {
+    padding: 20px;
+  }
+  
+  .pricing {
+    padding: 20px;
+  }
+
+  .team {
+    padding: 20px 0;
+  }
+
+  .multiple-items {
+    margin-top: 10px;
+  }
+
+  .team img {
+    max-width: 320px;
+  }
+
+  .slick-dots {
+    margin-top: 10px;
+  }
+
+  .left, .right {
+    flex-direction: column;
+  }
+
+  .blog, .blog-item {
+    width: 100%;
+  }
+    
+  .right > div:first-child {
+    order: 1;
+  }
+  
+  .right > div:last-child {
+    order: 2;
+  }
+
+  .blog i{
+    margin-right: 5px;
+  }
+
+  .button_blog {
+    margin-top: 10px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .form {
+    margin-top: 20px;
   }
 }
